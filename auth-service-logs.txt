@@ -1,0 +1,81 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.cosmicdoc:cosmicdoc-auth-service >----------------
+[INFO] Building cosmicdoc-auth-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ cosmicdoc-auth-service ---
+[INFO] Deleting /Users/venkat/Desktop/cosmicdoc_temp/auth-service/target
+[INFO] 
+[INFO] >>> spring-boot:3.3.13:run (default-cli) > test-compile @ cosmicdoc-auth-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cosmicdoc-auth-service ---
+[INFO] Copying 5 resources from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ cosmicdoc-auth-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 38 source files with javac [debug parameters release 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cosmicdoc-auth-service ---
+[INFO] skip non existing resourceDirectory /Users/venkat/Desktop/cosmicdoc_temp/auth-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ cosmicdoc-auth-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.3.13:run (default-cli) < test-compile @ cosmicdoc-auth-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.13:run (default-cli) @ cosmicdoc-auth-service ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.3.13)
+
+2025-06-24T09:54:27.438+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] c.c.a.CosmicdocAuthServiceApplication    : Starting CosmicdocAuthServiceApplication using Java 21.0.7 with PID 55707 (/Users/venkat/Desktop/cosmicdoc_temp/auth-service/target/classes started by venkat in /Users/venkat/Desktop/cosmicdoc_temp/auth-service)
+2025-06-24T09:54:27.440+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] c.c.a.CosmicdocAuthServiceApplication    : Running with Spring Boot v3.3.13, Spring v6.1.21
+2025-06-24T09:54:27.441+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] c.c.a.CosmicdocAuthServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T09:54:28.541+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-24T09:54:28.555+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-24T09:54:28.555+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-06-24T09:54:28.611+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-24T09:54:28.612+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1127 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2025-06-24T09:54:28.681+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2025-06-24T09:54:30.243+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-06-24T09:54:30.389+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 18 mappings in 'requestMappingHandlerMapping'
+2025-06-24T09:54:30.483+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-06-24T09:54:30.537+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-06-24T09:54:30.636+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-24T09:54:30.675+02:00 DEBUG 55707 --- [cosmicdoc-auth-service] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-24T09:54:30.791+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-24T09:54:30.799+02:00  INFO 55707 --- [cosmicdoc-auth-service] [           main] c.c.a.CosmicdocAuthServiceApplication    : Started CosmicdocAuthServiceApplication in 3.885 seconds (process running for 4.28)
+Creating test users...
+Test user already exists, updating password hash...
+Test user setup complete!
+Email: admin@cosmicmed.com
+Password: Test123!
+Password hash: $2a$10$FtMcYse2/ou74A58oZB/oejgaQ9R4X1qzlT4ckq6s6mgpZSAFoYS2
+Welcome to Auth service
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:06 min
+[INFO] Finished at: 2025-06-24T09:58:26+02:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.13:run (default-cli) on project cosmicdoc-auth-service: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

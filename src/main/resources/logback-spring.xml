@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <!-- Enable DEBUG logging for our application packages -->
+    <logger name="com.cosmicdoc" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    
+    <logger name="org.springframework.security" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    
+    <logger name="org.springframework.web" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
+    
+    <!-- Set root logger to INFO -->
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

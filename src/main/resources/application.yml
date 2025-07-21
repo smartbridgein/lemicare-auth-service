@@ -1,0 +1,28 @@
+server:
+  port: 8081 # Port for the Auth Service
+
+spring:
+  application:
+    name: cosmicdoc-auth-service
+
+app:
+  firebase:
+    # The path to your service account key within the classpath
+    service-account-path: "service-account.json"
+  jwt:
+    # IMPORTANT: Use a long, secure, base64-encoded secret in production
+    secret-key: "YourSuperStrongAndLongSecretKeyForHmacShaAlgorithmsAtLeast256Bits"
+    # Token validity in milliseconds (e.g., 1 hour)
+    expiration-ms: 3600000
+
+  mail:
+    host: smtp.sendgrid.net   # Example for SendGrid. Change for your provider.
+    port: 587                 # Common port for TLS
+    username: apikey          # For SendGrid, the username is literally "apikey"
+    password: ${SENDGRID_API_KEY} # IMPORTANT: Use an environment variable for the password/API key
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

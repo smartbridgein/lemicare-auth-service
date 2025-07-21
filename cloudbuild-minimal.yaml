@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/pivotal-store-459018-n4/auth-service-minimal:latest', '-f', 'Dockerfile.minimal', '.']
+images:
+- 'gcr.io/pivotal-store-459018-n4/auth-service-minimal:latest'

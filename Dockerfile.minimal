@@ -1,0 +1,16 @@
+FROM eclipse-temurin:17-jre-alpine
+
+WORKDIR /app
+
+# Copy jar file
+COPY target/cosmicdoc-auth-service-0.0.1-SNAPSHOT.jar app.jar
+
+# Hard-code port 8080 for Cloud Run
+ENV PORT=8080
+ENV SPRING_PROFILES_ACTIVE=minimal
+
+# Expose port 8080
+EXPOSE 8080
+
+# Run with minimal arguments - all as JVM system properties
+CMD ["java", "-Dserver.port=8080", "-Dspring.profiles.active=minimal", "-Dspring.main.web-application-type=servlet", "-Dspring.main.banner-mode=off", "-Xmx256m", "-Djava.security.egd=file:/dev/./urandom", "-jar", "app.jar"]
